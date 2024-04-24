@@ -1,0 +1,12 @@
+79821,Maria do Rosário Pima,Nutrição,64,7
+79824,Salete Sales,Nutrição,78,12
+79833,Eufrásia Gonçalves,Nutrição,60,2
+80007,Praxedes Quintão,Nutrição,88,0
+80013,Fiona Malaquias,Nutrição,65,20
+80016,Rosmira Bentes,Nutrição,73,10
+85901,Arminda Loures,Enfermagem,80,8
+85902,Pedro Paulo da Silva,Enfermagem,86,5
+85910,Penélope Poubel,Enfermagem,56,15
+85919,Xerxes da Silveira,Enfermagem,68,9
+85920,Agamenon Lopes,Nutrição,61,18
+85928,Luiz Carlos Xavier,Enfermagem,91,2

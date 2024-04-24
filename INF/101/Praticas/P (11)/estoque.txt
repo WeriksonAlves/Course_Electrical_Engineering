@@ -1,0 +1,12 @@
+tomate,1000,2.30
+alface,500,0.45
+batata,2150,1.20
+feijão,100,5.50
+champignon,10,57.80
+salsa,100,0.30
+couve,250,0.45
+fubá,950,0.65
+laranja,250,1.54
+maçã,100,12.35
+uva,50,10.37
+tomilho,10,12.35
