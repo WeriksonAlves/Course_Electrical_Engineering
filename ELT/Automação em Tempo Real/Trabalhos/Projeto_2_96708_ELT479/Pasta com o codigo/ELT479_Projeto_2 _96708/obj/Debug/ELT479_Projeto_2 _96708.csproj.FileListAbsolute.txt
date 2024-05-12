@@ -1,0 +1,20 @@
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\bin\Debug\ELT479_Projeto_2 _96708.exe.config
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\bin\Debug\ELT479_Projeto_2 _96708.exe
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\bin\Debug\ELT479_Projeto_2 _96708.pdb
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.csproj.AssemblyReference.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2__96708.Form1.resources
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2__96708.Properties.Resources.resources
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.csproj.GenerateResource.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.csproj.CoreCompileInputs.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.exe
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.pdb
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\bin\Debug\ELT479_Projeto_2 _96708.exe.config
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\bin\Debug\ELT479_Projeto_2 _96708.exe
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\bin\Debug\ELT479_Projeto_2 _96708.pdb
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.csproj.AssemblyReference.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2__96708.Form1.resources
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2__96708.Properties.Resources.resources
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.csproj.GenerateResource.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.csproj.CoreCompileInputs.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.exe
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\ELT479_Projeto_2 _96708 - Copia de segurança2\ELT479_Projeto_2 _96708\obj\Debug\ELT479_Projeto_2 _96708.pdb

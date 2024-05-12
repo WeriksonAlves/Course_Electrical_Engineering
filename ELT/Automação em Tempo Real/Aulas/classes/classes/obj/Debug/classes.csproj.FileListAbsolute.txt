@@ -1,0 +1,10 @@
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\bin\Debug\classes.exe.config
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\bin\Debug\classes.exe
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\bin\Debug\classes.pdb
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\obj\Debug\classes.csproj.AssemblyReference.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\obj\Debug\classes.Form1.resources
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\obj\Debug\classes.Properties.Resources.resources
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\obj\Debug\classes.csproj.GenerateResource.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\obj\Debug\classes.exe
+C:\Users\55329\OneDrive\Materia de Esdudo do dia\ELT 479\Trabalhos\csharp\classes\classes\obj\Debug\classes.pdb

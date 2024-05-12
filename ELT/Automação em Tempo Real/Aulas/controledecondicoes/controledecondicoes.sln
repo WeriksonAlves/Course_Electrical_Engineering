@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controledecondicoes", "controledecondicoes\controledecondicoes.csproj", "{541D1602-5BB3-4238-8FA0-8A3D625EF762}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{541D1602-5BB3-4238-8FA0-8A3D625EF762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541D1602-5BB3-4238-8FA0-8A3D625EF762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{541D1602-5BB3-4238-8FA0-8A3D625EF762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541D1602-5BB3-4238-8FA0-8A3D625EF762}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B42E4FBF-CF07-420E-AE5A-15901C0C6EA3}
+	EndGlobalSection
+EndGlobal
