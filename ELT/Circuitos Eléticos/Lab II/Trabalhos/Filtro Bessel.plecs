@@ -1,0 +1,6716 @@
+Plecs {
+  Name          "Bessel_Project"
+  Version       "3.7"
+  CircuitModel  "ContStateSpace"
+  StartTime     "0.0"
+  StopTime      "2.0"
+  Solver        "dopri"
+  MaxStep       "1e-6"
+  InitStep      "-1"
+  FixedStep     "1e-3"
+  Refine        "1"
+  ZCStepSize    "1e-9"
+  RelTol        "1e-3"
+  AbsTol        "-1"
+  TurnOnThreshold "0"
+  SyncFixedStepTasks "2"
+  UseSingleCommonBaseRate "2"
+  LossVariableLimitExceededMsg "3"
+  NegativeSwitchLossMsg "3"
+  DivisionByZeroMsg "3"
+  StiffnessDetectionMsg "2"
+  MaxConsecutiveZCs "1000"
+  AssertionAction "1"
+  InitializationCommands ""
+  InitialState  "1"
+  SystemState   ""
+  CodeGenTopologies "[]"
+  CodeGenSwitchingAlgorithm "1"
+  CodeGenMatrixCodingStyle "1"
+  CodeGenParameterInlining "2"
+  CodeGenInliningExceptions "AAAACwAAAAAA"
+  CodeGenIntegerWordSize "32"
+  CodeGenAbsTimeUsageMsg "3"
+  CodeGenBaseName ""
+  CodeGenOutputDir ""
+  CodeGenExtraOpts ""
+  ExtendedMatrixPrecision "1"
+  MatrixSignificanceCheck "2"
+  Schematic {
+    Location      [123, 57; 1427, 774]
+    ZoomFactor    1.33333
+    SliderPosition [25, 105]
+    ShowBrowser   off
+    BrowserWidth  100
+    Component {
+      Type          Subsystem
+      Name          base64 "QmVzc2VsCjLCsCBPcmRlbQ=="
+      Show          on
+      Position      [175, 125]
+      Direction     up
+      Flipped       off
+      Frame         [-55, -50; 55, 50]
+      LabelPosition [0, 0]
+      SampleTime    "-1"
+      MaskIconFrame on
+      MaskIconOpaque off
+      MaskIconRotates on
+      Schematic {
+        Location      [422, 59; 1782, 763]
+        ZoomFactor    1
+        SliderPosition [0, 0]
+        ShowBrowser   off
+        BrowserWidth  100
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave"
+          Show          on
+          Position      [60, 590]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "2000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step"
+          Show          on
+          Position      [150, 525]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.111"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch"
+          Show          on
+          Position      [230, 565]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave1"
+          Show          on
+          Position      [60, 535]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "4000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave2"
+          Show          on
+          Position      [60, 475]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "6000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave3"
+          Show          on
+          Position      [60, 420]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "8000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave4"
+          Show          on
+          Position      [60, 360]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "10000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave5"
+          Show          on
+          Position      [60, 305]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "12000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave6"
+          Show          on
+          Position      [60, 245]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "14000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave7"
+          Show          on
+          Position      [60, 190]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "16000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave8"
+          Show          on
+          Position      [60, 125]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "18000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave9"
+          Show          on
+          Position      [60, 70]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "20000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step1"
+          Show          on
+          Position      [150, 410]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.222"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step2"
+          Show          on
+          Position      [150, 290]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.333"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step3"
+          Show          on
+          Position      [150, 175]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.444"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step4"
+          Show          on
+          Position      [150, 50]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.555"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch1"
+          Show          on
+          Position      [230, 450]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch2"
+          Show          on
+          Position      [230, 335]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch3"
+          Show          on
+          Position      [230, 220]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch4"
+          Show          on
+          Position      [230, 100]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step5"
+          Show          on
+          Position      [340, 450]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.666"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch5"
+          Show          on
+          Position      [405, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step6"
+          Show          on
+          Position      [415, 295]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.888"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch6"
+          Show          on
+          Position      [480, 395]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step7"
+          Show          on
+          Position      [365, 95]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.777"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch7"
+          Show          on
+          Position      [565, 250]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step8"
+          Show          on
+          Position      [530, 180]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.999"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch8"
+          Show          on
+          Position      [405, 520]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          VoltageSource
+          Name          "V"
+          Show          on
+          Position      [635, 250]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "DiscretizationBehavior"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "StateSpaceInlining"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R1"
+          Show          on
+          Position      [720, 205]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Voltmeter
+          Name          "Vm1"
+          Show          on
+          Position      [1110, 250]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp"
+          Show          on
+          Position      [980, 215]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C1"
+          Show          on
+          Position      [950, 135]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground"
+          Show          off
+          Position      [950, 270]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto"
+          Show          off
+          Position      [1150, 250]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "SaidOrder2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C2"
+          Show          on
+          Position      [865, 270]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R2"
+          Show          on
+          Position      [820, 205]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground1"
+          Show          off
+          Position      [865, 310]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Ground
+          Name          "Ground2"
+          Show          off
+          Position      [635, 310]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Ground
+          Name          "Ground3"
+          Show          off
+          Position      [1110, 310]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto1"
+          Show          off
+          Position      [650, 165]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "Ent2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave9"
+          SrcTerminal   1
+          Points        [125, 70; 125, 95]
+          DstComponent  "Switch4"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave8"
+          SrcTerminal   1
+          Points        [125, 125; 125, 105]
+          DstComponent  "Switch4"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave7"
+          SrcTerminal   1
+          Points        [125, 190; 125, 215]
+          DstComponent  "Switch3"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave6"
+          SrcTerminal   1
+          Points        [125, 245; 125, 225]
+          DstComponent  "Switch3"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave5"
+          SrcTerminal   1
+          Points        [120, 305; 120, 330]
+          DstComponent  "Switch2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave4"
+          SrcTerminal   1
+          Points        [120, 360; 120, 340]
+          DstComponent  "Switch2"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave3"
+          SrcTerminal   1
+          Points        [120, 420; 120, 445]
+          DstComponent  "Switch1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave2"
+          SrcTerminal   1
+          Points        [120, 475; 120, 455]
+          DstComponent  "Switch1"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave1"
+          SrcTerminal   1
+          Points        [115, 535; 115, 560]
+          DstComponent  "Switch"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave"
+          SrcTerminal   1
+          Points        [115, 590; 115, 570]
+          DstComponent  "Switch"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step4"
+          SrcTerminal   1
+          Points        [230, 50]
+          DstComponent  "Switch4"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step3"
+          SrcTerminal   1
+          Points        [230, 175]
+          DstComponent  "Switch3"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step2"
+          SrcTerminal   1
+          Points        [230, 290]
+          DstComponent  "Switch2"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step1"
+          SrcTerminal   1
+          Points        [230, 410]
+          DstComponent  "Switch1"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step"
+          SrcTerminal   1
+          Points        [230, 525]
+          DstComponent  "Switch"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch4"
+          SrcTerminal   1
+          Points        [290, 100; 290, 155]
+          DstComponent  "Switch5"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch3"
+          SrcTerminal   1
+          Points        [290, 220; 290, 165]
+          DstComponent  "Switch5"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch1"
+          SrcTerminal   1
+          Points        [285, 450; 285, 515]
+          DstComponent  "Switch8"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch"
+          SrcTerminal   1
+          Points        [285, 565; 285, 525]
+          DstComponent  "Switch8"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch2"
+          SrcTerminal   1
+          Points        [350, 335; 350, 390]
+          DstComponent  "Switch6"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step5"
+          SrcTerminal   1
+          Points        [405, 450]
+          DstComponent  "Switch8"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch8"
+          SrcTerminal   1
+          Points        [435, 520; 435, 400]
+          DstComponent  "Switch6"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step6"
+          SrcTerminal   1
+          Points        [480, 295]
+          DstComponent  "Switch6"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch6"
+          SrcTerminal   1
+          Points        [515, 395; 515, 255]
+          DstComponent  "Switch7"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch5"
+          SrcTerminal   1
+          Points        [480, 160; 480, 245]
+          DstComponent  "Switch7"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step7"
+          SrcTerminal   1
+          Points        [405, 95]
+          DstComponent  "Switch5"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step8"
+          SrcTerminal   1
+          Points        [565, 180]
+          DstComponent  "Switch7"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   2
+          Points        [635, 205]
+          DstComponent  "V"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   1
+          Points        [770, 205]
+          Branch {
+            DstComponent  "R2"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [770, 135]
+            DstComponent  "C1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C1"
+          SrcTerminal   2
+          Points        [1025, 135; 1025, 215]
+          Branch {
+            DstComponent  "Op-Amp"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1025, 285; 915, 285; 915, 225]
+            DstComponent  "Op-Amp"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1110, 215]
+            DstComponent  "Vm1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground"
+          SrcTerminal   1
+          Points        [950, 250; 980, 250]
+          DstComponent  "Op-Amp"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Op-Amp"
+          SrcTerminal   1
+          Points        [865, 205]
+          Branch {
+            DstComponent  "R2"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground1"
+          SrcTerminal   1
+          DstComponent  "C2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground2"
+          SrcTerminal   1
+          DstComponent  "V"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground3"
+          SrcTerminal   1
+          DstComponent  "Vm1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vm1"
+          SrcTerminal   3
+          DstComponent  "Goto"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch7"
+          SrcTerminal   1
+          Points        [605, 250]
+          Branch {
+            DstComponent  "V"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [605, 165]
+            DstComponent  "Goto1"
+            DstTerminal   1
+          }
+        }
+      }
+    }
+    Component {
+      Type          Subsystem
+      Name          base64 "QmVzc2VsCjPCsCBPcmRlbQ=="
+      Show          on
+      Position      [175, 370]
+      Direction     up
+      Flipped       off
+      Frame         [-55, -50; 55, 50]
+      LabelPosition [0, 0]
+      SampleTime    "-1"
+      MaskIconFrame on
+      MaskIconOpaque off
+      MaskIconRotates on
+      Schematic {
+        Location      [6, 31; 1366, 735]
+        ZoomFactor    1
+        SliderPosition [0, -45]
+        ShowBrowser   off
+        BrowserWidth  100
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave"
+          Show          on
+          Position      [65, 610]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "2000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step"
+          Show          on
+          Position      [155, 545]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.111"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch"
+          Show          on
+          Position      [235, 585]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave1"
+          Show          on
+          Position      [65, 555]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "4000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave2"
+          Show          on
+          Position      [65, 495]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "6000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave3"
+          Show          on
+          Position      [65, 440]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "8000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave4"
+          Show          on
+          Position      [65, 380]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "10000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave5"
+          Show          on
+          Position      [65, 325]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "12000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave6"
+          Show          on
+          Position      [65, 265]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "14000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave7"
+          Show          on
+          Position      [65, 210]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "16000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave8"
+          Show          on
+          Position      [65, 145]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "18000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave9"
+          Show          on
+          Position      [65, 90]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "20000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step1"
+          Show          on
+          Position      [155, 430]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.222"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step2"
+          Show          on
+          Position      [155, 310]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.333"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step3"
+          Show          on
+          Position      [155, 195]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.444"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step4"
+          Show          on
+          Position      [155, 70]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.555"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch1"
+          Show          on
+          Position      [235, 470]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch2"
+          Show          on
+          Position      [235, 355]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch3"
+          Show          on
+          Position      [235, 240]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch4"
+          Show          on
+          Position      [235, 120]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step5"
+          Show          on
+          Position      [345, 470]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.666"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch5"
+          Show          on
+          Position      [410, 180]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step6"
+          Show          on
+          Position      [420, 315]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.888"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch6"
+          Show          on
+          Position      [485, 415]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step7"
+          Show          on
+          Position      [370, 115]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.777"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch7"
+          Show          on
+          Position      [570, 270]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step8"
+          Show          on
+          Position      [535, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.999"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch8"
+          Show          on
+          Position      [410, 540]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          VoltageSource
+          Name          "V"
+          Show          on
+          Position      [640, 270]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "DiscretizationBehavior"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "StateSpaceInlining"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground2"
+          Show          off
+          Position      [640, 330]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto1"
+          Show          off
+          Position      [655, 185]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "Ent3"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Goto
+          Name          "Goto"
+          Show          off
+          Position      [1225, 260]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "SaidOrder3"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R1"
+          Show          on
+          Position      [725, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C1"
+          Show          on
+          Position      [775, 275]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp"
+          Show          on
+          Position      [1050, 235]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Voltmeter
+          Name          "Vm1"
+          Show          on
+          Position      [1170, 260]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Ground
+          Name          "Ground"
+          Show          off
+          Position      [1050, 340]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R2"
+          Show          on
+          Position      [825, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R3"
+          Show          on
+          Position      [920, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C2"
+          Show          on
+          Position      [990, 165]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C3"
+          Show          on
+          Position      [980, 275]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "1800e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground1"
+          Show          off
+          Position      [885, 335]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Ground
+          Name          "Ground3"
+          Show          off
+          Position      [1170, 340]
+          Direction     up
+          Flipped       off
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave9"
+          SrcTerminal   1
+          Points        [130, 90; 130, 115]
+          DstComponent  "Switch4"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave8"
+          SrcTerminal   1
+          Points        [130, 145; 130, 125]
+          DstComponent  "Switch4"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave7"
+          SrcTerminal   1
+          Points        [130, 210; 130, 235]
+          DstComponent  "Switch3"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave6"
+          SrcTerminal   1
+          Points        [130, 265; 130, 245]
+          DstComponent  "Switch3"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave5"
+          SrcTerminal   1
+          Points        [125, 325; 125, 350]
+          DstComponent  "Switch2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave4"
+          SrcTerminal   1
+          Points        [125, 380; 125, 360]
+          DstComponent  "Switch2"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave3"
+          SrcTerminal   1
+          Points        [125, 440; 125, 465]
+          DstComponent  "Switch1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave2"
+          SrcTerminal   1
+          Points        [125, 495; 125, 475]
+          DstComponent  "Switch1"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave1"
+          SrcTerminal   1
+          Points        [120, 555; 120, 580]
+          DstComponent  "Switch"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave"
+          SrcTerminal   1
+          Points        [120, 610; 120, 590]
+          DstComponent  "Switch"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step4"
+          SrcTerminal   1
+          Points        [235, 70]
+          DstComponent  "Switch4"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step3"
+          SrcTerminal   1
+          Points        [235, 195]
+          DstComponent  "Switch3"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step2"
+          SrcTerminal   1
+          Points        [235, 310]
+          DstComponent  "Switch2"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step1"
+          SrcTerminal   1
+          Points        [235, 430]
+          DstComponent  "Switch1"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step"
+          SrcTerminal   1
+          Points        [235, 545]
+          DstComponent  "Switch"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch4"
+          SrcTerminal   1
+          Points        [295, 120; 295, 175]
+          DstComponent  "Switch5"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch3"
+          SrcTerminal   1
+          Points        [295, 240; 295, 185]
+          DstComponent  "Switch5"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch1"
+          SrcTerminal   1
+          Points        [290, 470; 290, 535]
+          DstComponent  "Switch8"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch"
+          SrcTerminal   1
+          Points        [290, 585; 290, 545]
+          DstComponent  "Switch8"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch2"
+          SrcTerminal   1
+          Points        [355, 355; 355, 410]
+          DstComponent  "Switch6"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step5"
+          SrcTerminal   1
+          Points        [410, 470]
+          DstComponent  "Switch8"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch8"
+          SrcTerminal   1
+          Points        [440, 540; 440, 420]
+          DstComponent  "Switch6"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step6"
+          SrcTerminal   1
+          Points        [485, 315]
+          DstComponent  "Switch6"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch6"
+          SrcTerminal   1
+          Points        [520, 415; 520, 275]
+          DstComponent  "Switch7"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch5"
+          SrcTerminal   1
+          Points        [485, 180; 485, 265]
+          DstComponent  "Switch7"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step7"
+          SrcTerminal   1
+          Points        [410, 115]
+          DstComponent  "Switch5"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step8"
+          SrcTerminal   1
+          Points        [570, 200]
+          DstComponent  "Switch7"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   2
+          Points        [640, 225]
+          DstComponent  "V"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground2"
+          SrcTerminal   1
+          DstComponent  "V"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch7"
+          SrcTerminal   1
+          Points        [610, 270]
+          Branch {
+            DstComponent  "V"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [610, 185]
+            DstComponent  "Goto1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   1
+          Points        [775, 225]
+          Branch {
+            DstComponent  "R2"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "C1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R2"
+          SrcTerminal   1
+          Points        [875, 225]
+          Branch {
+            DstComponent  "R3"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [875, 165]
+            DstComponent  "C2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R3"
+          SrcTerminal   1
+          Points        [980, 225]
+          Branch {
+            DstComponent  "Op-Amp"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C3"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground"
+          SrcTerminal   1
+          DstComponent  "Op-Amp"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C1"
+          SrcTerminal   2
+          Points        [775, 305; 885, 305]
+          Branch {
+            Points        [980, 305]
+            DstComponent  "C3"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "Ground1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C2"
+          SrcTerminal   2
+          Points        [1095, 165; 1095, 235]
+          Branch {
+            DstComponent  "Op-Amp"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1095, 280; 1010, 280; 1010, 245]
+            DstComponent  "Op-Amp"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1170, 235]
+            DstComponent  "Vm1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground3"
+          SrcTerminal   1
+          DstComponent  "Vm1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vm1"
+          SrcTerminal   3
+          DstComponent  "Goto"
+          DstTerminal   1
+        }
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope1"
+      Show          on
+      Position      [420, 375]
+      Direction     up
+      Flipped       off
+      Location      [321, 132; 1686, 861]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADQA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGYA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABmAP///wAAAAMAAAVVAAAAcvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVUAAABQAP///wAABVUAAAJIAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
+"QAAAGQAAAAIAAAAZAAAAAcAAABkAAAABgAAAGQAAAAFAAAAZAAAAAQAAABkAAAAAwAAAGQAAAACAA"
+"AAZAAAAAEAAABkAAAFVQAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABoAAA"
+"AAQAAAAAAAAAAAAAACQAAAAAAAATtAAAAAQAAAAA="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          From
+      Name          "From"
+      Show          off
+      Position      [305, 340]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "Ent3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From1"
+      Show          off
+      Position      [305, 410]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "SaidOrder3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux"
+      Show          off
+      Position      [360, 375]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope"
+      Show          on
+      Position      [420, 130]
+      Direction     up
+      Flipped       off
+      Location      [1, 31; 959, 1059]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADQA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGYA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABmAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAA74AAAPpAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
+"QAAAGQAAAAIAAAAZAAAAAcAAABkAAAABgAAAGQAAAAFAAAAZAAAAAQAAABkAAAAAwAAAGQAAAACAA"
+"AAZAAAAAEAAABkAAAAiwAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABoAAA"
+"AAQAAAAAAAAAAAAAACQAAAAAAAAAjAAAAAQAAAAA="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "1"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          From
+      Name          "From2"
+      Show          off
+      Position      [305, 95]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "Ent2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From3"
+      Show          off
+      Position      [305, 165]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "SaidOrder2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux1"
+      Show          off
+      Position      [360, 130]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Subsystem
+      Name          base64 "QmVzc2VsCjXCsCBPcmRlbQ=="
+      Show          on
+      Position      [580, 125]
+      Direction     up
+      Flipped       off
+      Frame         [-55, -50; 55, 50]
+      LabelPosition [0, 0]
+      SampleTime    "-1"
+      MaskIconFrame on
+      MaskIconOpaque off
+      MaskIconRotates on
+      Schematic {
+        Location      [0, 23; 1920, 1039]
+        ZoomFactor    1.33333
+        SliderPosition [380, 0]
+        ShowBrowser   off
+        BrowserWidth  100
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave"
+          Show          on
+          Position      [65, 610]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "2000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step"
+          Show          on
+          Position      [155, 545]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.111"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch"
+          Show          on
+          Position      [235, 585]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave1"
+          Show          on
+          Position      [65, 555]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "4000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave2"
+          Show          on
+          Position      [65, 495]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "6000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave3"
+          Show          on
+          Position      [65, 440]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "8000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave4"
+          Show          on
+          Position      [65, 380]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "10000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave5"
+          Show          on
+          Position      [65, 325]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "12000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave6"
+          Show          on
+          Position      [65, 265]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "14000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave7"
+          Show          on
+          Position      [65, 210]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "16000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave8"
+          Show          on
+          Position      [65, 145]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "18000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave9"
+          Show          on
+          Position      [65, 90]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "20000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step1"
+          Show          on
+          Position      [155, 430]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.222"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step2"
+          Show          on
+          Position      [155, 310]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.333"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step3"
+          Show          on
+          Position      [155, 195]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.444"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step4"
+          Show          on
+          Position      [155, 70]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.555"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch1"
+          Show          on
+          Position      [235, 470]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch2"
+          Show          on
+          Position      [235, 355]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch3"
+          Show          on
+          Position      [235, 240]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch4"
+          Show          on
+          Position      [235, 120]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step5"
+          Show          on
+          Position      [345, 470]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.666"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch5"
+          Show          on
+          Position      [410, 180]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step6"
+          Show          on
+          Position      [420, 315]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.888"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch6"
+          Show          on
+          Position      [485, 415]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step7"
+          Show          on
+          Position      [370, 115]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.777"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch7"
+          Show          on
+          Position      [570, 270]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step8"
+          Show          on
+          Position      [535, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.999"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch8"
+          Show          on
+          Position      [410, 540]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          VoltageSource
+          Name          "V"
+          Show          on
+          Position      [630, 270]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "DiscretizationBehavior"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "StateSpaceInlining"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground2"
+          Show          off
+          Position      [630, 330]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto1"
+          Show          off
+          Position      [600, 220]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "Ent5"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R1"
+          Show          on
+          Position      [660, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C1"
+          Show          on
+          Position      [710, 275]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp"
+          Show          on
+          Position      [985, 235]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground"
+          Show          off
+          Position      [985, 340]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R2"
+          Show          on
+          Position      [760, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R3"
+          Show          on
+          Position      [855, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C2"
+          Show          on
+          Position      [925, 165]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C3"
+          Show          on
+          Position      [915, 275]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "1800e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground1"
+          Show          off
+          Position      [820, 335]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Ground
+          Name          "Ground3"
+          Show          off
+          Position      [1610, 380]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R4"
+          Show          on
+          Position      [1075, 235]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp1"
+          Show          on
+          Position      [1335, 245]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C4"
+          Show          on
+          Position      [1305, 165]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground4"
+          Show          off
+          Position      [1305, 300]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Capacitor
+          Name          "C5"
+          Show          on
+          Position      [1220, 300]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R5"
+          Show          on
+          Position      [1175, 235]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground5"
+          Show          off
+          Position      [1220, 340]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto"
+          Show          off
+          Position      [1665, 300]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "SaidOrder5"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Voltmeter
+          Name          "Vm1"
+          Show          on
+          Position      [1610, 300]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp2"
+          Show          on
+          Position      [1475, 255]
+          Direction     up
+          Flipped       on
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, 23]
+          LabelAlign    up
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground6"
+          Show          off
+          Position      [1525, 360]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R6"
+          Show          on
+          Position      [1415, 245]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R7"
+          Show          on
+          Position      [1475, 185]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "100"
+            Show          off
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave9"
+          SrcTerminal   1
+          Points        [130, 90; 130, 115]
+          DstComponent  "Switch4"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave8"
+          SrcTerminal   1
+          Points        [130, 145; 130, 125]
+          DstComponent  "Switch4"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave7"
+          SrcTerminal   1
+          Points        [130, 210; 130, 235]
+          DstComponent  "Switch3"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave6"
+          SrcTerminal   1
+          Points        [130, 265; 130, 245]
+          DstComponent  "Switch3"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave5"
+          SrcTerminal   1
+          Points        [125, 325; 125, 350]
+          DstComponent  "Switch2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave4"
+          SrcTerminal   1
+          Points        [125, 380; 125, 360]
+          DstComponent  "Switch2"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave3"
+          SrcTerminal   1
+          Points        [125, 440; 125, 465]
+          DstComponent  "Switch1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave2"
+          SrcTerminal   1
+          Points        [125, 495; 125, 475]
+          DstComponent  "Switch1"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave1"
+          SrcTerminal   1
+          Points        [120, 555; 120, 580]
+          DstComponent  "Switch"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave"
+          SrcTerminal   1
+          Points        [120, 610; 120, 590]
+          DstComponent  "Switch"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step4"
+          SrcTerminal   1
+          Points        [235, 70]
+          DstComponent  "Switch4"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step3"
+          SrcTerminal   1
+          Points        [235, 195]
+          DstComponent  "Switch3"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step2"
+          SrcTerminal   1
+          Points        [235, 310]
+          DstComponent  "Switch2"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step1"
+          SrcTerminal   1
+          Points        [235, 430]
+          DstComponent  "Switch1"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step"
+          SrcTerminal   1
+          Points        [235, 545]
+          DstComponent  "Switch"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch4"
+          SrcTerminal   1
+          Points        [295, 120; 295, 175]
+          DstComponent  "Switch5"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch3"
+          SrcTerminal   1
+          Points        [295, 240; 295, 185]
+          DstComponent  "Switch5"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch1"
+          SrcTerminal   1
+          Points        [290, 470; 290, 535]
+          DstComponent  "Switch8"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch"
+          SrcTerminal   1
+          Points        [290, 585; 290, 545]
+          DstComponent  "Switch8"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch2"
+          SrcTerminal   1
+          Points        [355, 355; 355, 410]
+          DstComponent  "Switch6"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step5"
+          SrcTerminal   1
+          Points        [410, 470]
+          DstComponent  "Switch8"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch8"
+          SrcTerminal   1
+          Points        [440, 540; 440, 420]
+          DstComponent  "Switch6"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step6"
+          SrcTerminal   1
+          Points        [485, 315]
+          DstComponent  "Switch6"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch6"
+          SrcTerminal   1
+          Points        [520, 415; 520, 275]
+          DstComponent  "Switch7"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch5"
+          SrcTerminal   1
+          Points        [485, 180; 485, 265]
+          DstComponent  "Switch7"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step7"
+          SrcTerminal   1
+          Points        [410, 115]
+          DstComponent  "Switch5"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step8"
+          SrcTerminal   1
+          Points        [570, 200]
+          DstComponent  "Switch7"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   1
+          Points        [710, 225]
+          Branch {
+            DstComponent  "R2"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "C1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R2"
+          SrcTerminal   1
+          Points        [810, 225]
+          Branch {
+            DstComponent  "R3"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [810, 165]
+            DstComponent  "C2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R3"
+          SrcTerminal   1
+          Points        [915, 225]
+          Branch {
+            DstComponent  "Op-Amp"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C3"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground"
+          SrcTerminal   1
+          DstComponent  "Op-Amp"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C1"
+          SrcTerminal   2
+          Points        [710, 305; 820, 305]
+          Branch {
+            Points        [915, 305]
+            DstComponent  "C3"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "Ground1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C2"
+          SrcTerminal   2
+          Points        [1030, 165; 1030, 235]
+          Branch {
+            DstComponent  "Op-Amp"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1030, 280; 945, 280; 945, 245]
+            DstComponent  "Op-Amp"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "R4"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R4"
+          SrcTerminal   1
+          Points        [1125, 235]
+          Branch {
+            DstComponent  "R5"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1125, 165]
+            DstComponent  "C4"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C4"
+          SrcTerminal   2
+          Points        [1380, 165; 1380, 245]
+          Branch {
+            DstComponent  "Op-Amp1"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1380, 315; 1270, 315; 1270, 255]
+            DstComponent  "Op-Amp1"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "R6"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground4"
+          SrcTerminal   1
+          Points        [1305, 280; 1335, 280]
+          DstComponent  "Op-Amp1"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Op-Amp1"
+          SrcTerminal   1
+          Points        [1220, 235]
+          Branch {
+            DstComponent  "R5"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C5"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground5"
+          SrcTerminal   1
+          DstComponent  "C5"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vm1"
+          SrcTerminal   3
+          DstComponent  "Goto"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Vm1"
+          SrcTerminal   2
+          DstComponent  "Ground3"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   2
+          Points        [630, 225]
+          DstComponent  "V"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground2"
+          SrcTerminal   1
+          DstComponent  "V"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground6"
+          SrcTerminal   1
+          Points        [1525, 315]
+          Branch {
+            Points        [1525, 210; 1475, 210]
+            DstComponent  "Op-Amp2"
+            DstTerminal   4
+          }
+          Branch {
+            Points        [1440, 315; 1440, 265]
+            DstComponent  "Op-Amp2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R6"
+          SrcTerminal   1
+          Points        [1445, 245]
+          Branch {
+            DstComponent  "Op-Amp2"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1445, 185]
+            DstComponent  "R7"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Op-Amp2"
+          SrcTerminal   3
+          Points        [1545, 255]
+          Branch {
+            Points        [1610, 255]
+            DstComponent  "Vm1"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [1545, 185]
+            DstComponent  "R7"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch7"
+          SrcTerminal   1
+          Points        [600, 270]
+          Branch {
+            DstComponent  "V"
+            DstTerminal   3
+          }
+          Branch {
+            DstComponent  "Goto1"
+            DstTerminal   1
+          }
+        }
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope2"
+      Show          on
+      Position      [830, 130]
+      Direction     up
+      Flipped       off
+      Location      [961, 31; 1919, 519]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADQA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGYA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABmAP///wAAAAMAAAO+AAAAcvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAAA74AAABQAP///wAAA74AAAHNAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
+"QAAAGQAAAAIAAAAZAAAAAcAAABkAAAABgAAAGQAAAAFAAAAZAAAAAQAAABkAAAAAwAAAGQAAAACAA"
+"AAZAAAAAEAAABkAAAAiwAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABoAAA"
+"AAQAAAAAAAAAAAAAACQAAAAAAAAAjAAAAAQAAAAA="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "1"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          From
+      Name          "From5"
+      Show          off
+      Position      [705, 165]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "SaidOrder5"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux2"
+      Show          off
+      Position      [770, 130]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From6"
+      Show          off
+      Position      [705, 95]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "Ent5"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Subsystem
+      Name          base64 "QmVzc2VsCjEwwrAgT3JkZW0="
+      Show          on
+      Position      [585, 370]
+      Direction     up
+      Flipped       off
+      Frame         [-55, -50; 55, 50]
+      LabelPosition [0, 0]
+      SampleTime    "-1"
+      MaskIconFrame on
+      MaskIconOpaque off
+      MaskIconRotates on
+      Schematic {
+        Location      [0, 31; 1920, 1047]
+        ZoomFactor    1.77778
+        SliderPosition [1063, 240]
+        ShowBrowser   off
+        BrowserWidth  100
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave"
+          Show          on
+          Position      [65, 610]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "2000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step"
+          Show          on
+          Position      [155, 545]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.111"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch"
+          Show          on
+          Position      [235, 585]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave1"
+          Show          on
+          Position      [65, 555]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "4000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave2"
+          Show          on
+          Position      [65, 495]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "6000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave3"
+          Show          on
+          Position      [65, 440]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "8000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave4"
+          Show          on
+          Position      [65, 380]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "10000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave5"
+          Show          on
+          Position      [65, 325]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "12000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave6"
+          Show          on
+          Position      [65, 265]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "14000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave7"
+          Show          on
+          Position      [65, 210]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "16000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave8"
+          Show          on
+          Position      [65, 145]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "18000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          SineGenerator
+          Name          "Sine Wave9"
+          Show          on
+          Position      [65, 90]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Amplitude"
+            Value         "4"
+            Show          off
+          }
+          Parameter {
+            Variable      "Bias"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Frequency"
+            Value         "20000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Phase"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "Units"
+            Value         "3"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step1"
+          Show          on
+          Position      [155, 430]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.222"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step2"
+          Show          on
+          Position      [155, 310]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.333"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step3"
+          Show          on
+          Position      [155, 195]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.444"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step4"
+          Show          on
+          Position      [155, 70]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.555"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch1"
+          Show          on
+          Position      [235, 470]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch2"
+          Show          on
+          Position      [235, 355]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch3"
+          Show          on
+          Position      [235, 240]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch4"
+          Show          on
+          Position      [235, 120]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step5"
+          Show          on
+          Position      [345, 470]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.666"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch5"
+          Show          on
+          Position      [410, 180]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step6"
+          Show          on
+          Position      [420, 315]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.888"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch6"
+          Show          on
+          Position      [485, 415]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step7"
+          Show          on
+          Position      [370, 115]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.777"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch7"
+          Show          on
+          Position      [570, 270]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Step
+          Name          "Step8"
+          Show          on
+          Position      [535, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Time"
+            Value         "0.999"
+            Show          off
+          }
+          Parameter {
+            Variable      "Before"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "After"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalSwitch
+          Name          "Switch8"
+          Show          on
+          Position      [410, 540]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Criteria"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Threshold"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          VoltageSource
+          Name          "V"
+          Show          on
+          Position      [640, 270]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "DiscretizationBehavior"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "StateSpaceInlining"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground2"
+          Show          off
+          Position      [640, 330]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto1"
+          Show          off
+          Position      [595, 170]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "Ent10"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R1"
+          Show          on
+          Position      [670, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C1"
+          Show          on
+          Position      [720, 275]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp"
+          Show          on
+          Position      [995, 235]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground"
+          Show          off
+          Position      [995, 340]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R2"
+          Show          on
+          Position      [770, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R3"
+          Show          on
+          Position      [865, 225]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C2"
+          Show          on
+          Position      [935, 165]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C3"
+          Show          on
+          Position      [925, 275]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "1800e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground1"
+          Show          off
+          Position      [830, 335]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R4"
+          Show          on
+          Position      [1085, 235]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp1"
+          Show          on
+          Position      [1345, 245]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C4"
+          Show          on
+          Position      [1315, 165]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground4"
+          Show          off
+          Position      [1315, 300]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Capacitor
+          Name          "C5"
+          Show          on
+          Position      [1230, 300]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R5"
+          Show          on
+          Position      [1185, 235]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground5"
+          Show          off
+          Position      [1230, 340]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp2"
+          Show          on
+          Position      [1505, 275]
+          Direction     up
+          Flipped       on
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, 23]
+          LabelAlign    up
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground6"
+          Show          off
+          Position      [1555, 375]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R6"
+          Show          on
+          Position      [1445, 265]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R7"
+          Show          on
+          Position      [1505, 205]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R8"
+          Show          on
+          Position      [670, 545]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C6"
+          Show          on
+          Position      [720, 595]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp3"
+          Show          on
+          Position      [995, 555]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground8"
+          Show          off
+          Position      [995, 660]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R9"
+          Show          on
+          Position      [770, 545]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R10"
+          Show          on
+          Position      [865, 545]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "5100"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C7"
+          Show          on
+          Position      [935, 485]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C8"
+          Show          on
+          Position      [925, 595]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "1800e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground9"
+          Show          off
+          Position      [830, 655]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Ground
+          Name          "Ground10"
+          Show          off
+          Position      [1530, 660]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Resistor
+          Name          "R11"
+          Show          on
+          Position      [1085, 555]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Electrical/Electronics/Op-Amp"
+          Name          "Op-Amp4"
+          Show          on
+          Position      [1345, 565]
+          Direction     up
+          Flipped       off
+          Frame         [-20, -20; 20, 20]
+          LabelPosition [0, -23]
+          LabelAlign    down
+          Parameter {
+            Variable      "A"
+            Value         "1e6"
+            Show          off
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [-25, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Port
+            Position      [25, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Port
+            Position      [0, 15]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Capacitor
+          Name          "C9"
+          Show          on
+          Position      [1315, 485]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "10e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground11"
+          Show          off
+          Position      [1315, 620]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Capacitor
+          Name          "C10"
+          Show          on
+          Position      [1230, 620]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "C"
+            Value         "7500e-12"
+            Show          off
+          }
+          Parameter {
+            Variable      "v_init"
+            Value         "0"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "R12"
+          Show          on
+          Position      [1185, 555]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "3000"
+            Show          off
+          }
+        }
+        Component {
+          Type          Ground
+          Name          "Ground12"
+          Show          off
+          Position      [1230, 660]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto3"
+          Show          off
+          Position      [1585, 590]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "SaidOrder10"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Voltmeter
+          Name          "Vm2"
+          Show          on
+          Position      [1530, 590]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Ground
+          Name          "Ground13"
+          Show          off
+          Position      [2180, 1055]
+          Direction     up
+          Flipped       off
+        }
+        Component {
+          Type          Goto
+          Name          "Goto4"
+          Show          off
+          Position      [2235, 975]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Tag"
+            Value         "asdklaj"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Voltmeter
+          Name          "Vm3"
+          Show          on
+          Position      [2180, 975]
+          Direction     up
+          Flipped       off
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave9"
+          SrcTerminal   1
+          Points        [130, 90; 130, 115]
+          DstComponent  "Switch4"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave8"
+          SrcTerminal   1
+          Points        [130, 145; 130, 125]
+          DstComponent  "Switch4"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave7"
+          SrcTerminal   1
+          Points        [130, 210; 130, 235]
+          DstComponent  "Switch3"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave6"
+          SrcTerminal   1
+          Points        [130, 265; 130, 245]
+          DstComponent  "Switch3"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave5"
+          SrcTerminal   1
+          Points        [125, 325; 125, 350]
+          DstComponent  "Switch2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave4"
+          SrcTerminal   1
+          Points        [125, 380; 125, 360]
+          DstComponent  "Switch2"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave3"
+          SrcTerminal   1
+          Points        [125, 440; 125, 465]
+          DstComponent  "Switch1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave2"
+          SrcTerminal   1
+          Points        [125, 495; 125, 475]
+          DstComponent  "Switch1"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave1"
+          SrcTerminal   1
+          Points        [120, 555; 120, 580]
+          DstComponent  "Switch"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sine Wave"
+          SrcTerminal   1
+          Points        [120, 610; 120, 590]
+          DstComponent  "Switch"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step4"
+          SrcTerminal   1
+          Points        [235, 70]
+          DstComponent  "Switch4"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step3"
+          SrcTerminal   1
+          Points        [235, 195]
+          DstComponent  "Switch3"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step2"
+          SrcTerminal   1
+          Points        [235, 310]
+          DstComponent  "Switch2"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step1"
+          SrcTerminal   1
+          Points        [235, 430]
+          DstComponent  "Switch1"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step"
+          SrcTerminal   1
+          Points        [235, 545]
+          DstComponent  "Switch"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch4"
+          SrcTerminal   1
+          Points        [295, 120; 295, 175]
+          DstComponent  "Switch5"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch3"
+          SrcTerminal   1
+          Points        [295, 240; 295, 185]
+          DstComponent  "Switch5"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch1"
+          SrcTerminal   1
+          Points        [290, 470; 290, 535]
+          DstComponent  "Switch8"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch"
+          SrcTerminal   1
+          Points        [290, 585; 290, 545]
+          DstComponent  "Switch8"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch2"
+          SrcTerminal   1
+          Points        [355, 355; 355, 410]
+          DstComponent  "Switch6"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step5"
+          SrcTerminal   1
+          Points        [410, 470]
+          DstComponent  "Switch8"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch8"
+          SrcTerminal   1
+          Points        [440, 540; 440, 420]
+          DstComponent  "Switch6"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step6"
+          SrcTerminal   1
+          Points        [485, 315]
+          DstComponent  "Switch6"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch6"
+          SrcTerminal   1
+          Points        [520, 415; 520, 275]
+          DstComponent  "Switch7"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch5"
+          SrcTerminal   1
+          Points        [485, 180; 485, 265]
+          DstComponent  "Switch7"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step7"
+          SrcTerminal   1
+          Points        [410, 115]
+          DstComponent  "Switch5"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Step8"
+          SrcTerminal   1
+          Points        [570, 200]
+          DstComponent  "Switch7"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   1
+          Points        [720, 225]
+          Branch {
+            DstComponent  "R2"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "C1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R2"
+          SrcTerminal   1
+          Points        [820, 225]
+          Branch {
+            DstComponent  "R3"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [820, 165]
+            DstComponent  "C2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R3"
+          SrcTerminal   1
+          Points        [925, 225]
+          Branch {
+            DstComponent  "Op-Amp"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C3"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground"
+          SrcTerminal   1
+          DstComponent  "Op-Amp"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C1"
+          SrcTerminal   2
+          Points        [720, 305; 830, 305]
+          Branch {
+            Points        [925, 305]
+            DstComponent  "C3"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "Ground1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C2"
+          SrcTerminal   2
+          Points        [1040, 165; 1040, 235]
+          Branch {
+            DstComponent  "Op-Amp"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1040, 280; 955, 280; 955, 245]
+            DstComponent  "Op-Amp"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "R4"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R4"
+          SrcTerminal   1
+          Points        [1135, 235]
+          Branch {
+            DstComponent  "R5"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1135, 165]
+            DstComponent  "C4"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C4"
+          SrcTerminal   2
+          Points        [1390, 165; 1390, 245]
+          Branch {
+            DstComponent  "Op-Amp1"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1390, 315; 1280, 315; 1280, 255]
+            DstComponent  "Op-Amp1"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1415, 245; 1415, 265]
+            DstComponent  "R6"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground4"
+          SrcTerminal   1
+          Points        [1315, 280; 1345, 280]
+          DstComponent  "Op-Amp1"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Op-Amp1"
+          SrcTerminal   1
+          Points        [1230, 235]
+          Branch {
+            DstComponent  "R5"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C5"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground5"
+          SrcTerminal   1
+          DstComponent  "C5"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground6"
+          SrcTerminal   1
+          Points        [1555, 335]
+          Branch {
+            Points        [1555, 230; 1505, 230]
+            DstComponent  "Op-Amp2"
+            DstTerminal   4
+          }
+          Branch {
+            Points        [1470, 335; 1470, 285]
+            DstComponent  "Op-Amp2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R1"
+          SrcTerminal   2
+          Points        [640, 225]
+          DstComponent  "V"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground2"
+          SrcTerminal   1
+          DstComponent  "V"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R6"
+          SrcTerminal   1
+          Points        [1475, 265]
+          Branch {
+            DstComponent  "Op-Amp2"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1475, 205]
+            DstComponent  "R7"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R8"
+          SrcTerminal   1
+          Points        [720, 545]
+          Branch {
+            DstComponent  "R9"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "C6"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R9"
+          SrcTerminal   1
+          Points        [820, 545]
+          Branch {
+            DstComponent  "R10"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [820, 485]
+            DstComponent  "C7"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R10"
+          SrcTerminal   1
+          Points        [925, 545]
+          Branch {
+            DstComponent  "Op-Amp3"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C8"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground8"
+          SrcTerminal   1
+          DstComponent  "Op-Amp3"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C6"
+          SrcTerminal   2
+          Points        [720, 625; 830, 625]
+          Branch {
+            Points        [925, 625]
+            DstComponent  "C8"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "Ground9"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C7"
+          SrcTerminal   2
+          Points        [1040, 485; 1040, 555]
+          Branch {
+            DstComponent  "Op-Amp3"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1040, 600; 955, 600; 955, 565]
+            DstComponent  "Op-Amp3"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "R11"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "R11"
+          SrcTerminal   1
+          Points        [1135, 555]
+          Branch {
+            DstComponent  "R12"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1135, 485]
+            DstComponent  "C9"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C9"
+          SrcTerminal   2
+          Points        [1390, 485; 1390, 565]
+          Branch {
+            DstComponent  "Op-Amp4"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [1390, 635; 1280, 635; 1280, 575]
+            DstComponent  "Op-Amp4"
+            DstTerminal   2
+          }
+          Branch {
+            Points        [1530, 565]
+            DstComponent  "Vm2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground11"
+          SrcTerminal   1
+          Points        [1315, 600; 1345, 600]
+          DstComponent  "Op-Amp4"
+          DstTerminal   4
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Op-Amp4"
+          SrcTerminal   1
+          Points        [1230, 555]
+          Branch {
+            DstComponent  "R12"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "C10"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Ground12"
+          SrcTerminal   1
+          DstComponent  "C10"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vm2"
+          SrcTerminal   3
+          DstComponent  "Goto3"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Vm2"
+          SrcTerminal   2
+          DstComponent  "Ground10"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Op-Amp2"
+          SrcTerminal   3
+          Points        [1575, 275]
+          Branch {
+            Points        [1575, 205]
+            DstComponent  "R7"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [1625, 275; 1625, 435; 640, 435; 640, 545]
+            DstComponent  "R8"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vm3"
+          SrcTerminal   3
+          DstComponent  "Goto4"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "Vm3"
+          SrcTerminal   2
+          Points        [2180, 995]
+          Branch {
+            DstComponent  "Ground13"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "Vm3"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Switch7"
+          SrcTerminal   1
+          Points        [595, 270]
+          Branch {
+            DstComponent  "V"
+            DstTerminal   3
+          }
+          Branch {
+            DstComponent  "Goto1"
+            DstTerminal   1
+          }
+        }
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope3"
+      Show          on
+      Position      [835, 375]
+      Direction     up
+      Flipped       off
+      Location      [961, 571; 1919, 1059]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADQA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGYA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABmAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAA74AAAHNAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
+"QAAAGQAAAAIAAAAZAAAAAcAAABkAAAABgAAAGQAAAAFAAAAZAAAAAQAAABkAAAAAwAAAGQAAAACAA"
+"AAZAAAAAEAAABkAAAAiwAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABoAAA"
+"AAQAAAAAAAAAAAAAACQAAAAAAAAAjAAAAAQAAAAA="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "1"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          From
+      Name          "From7"
+      Show          off
+      Position      [710, 410]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "SaidOrder10"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux3"
+      Show          off
+      Position      [775, 375]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From8"
+      Show          off
+      Position      [710, 340]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Tag"
+        Value         "Ent10"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From1"
+      SrcTerminal   1
+      Points        [330, 410; 330, 380]
+      DstComponent  "Mux"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From"
+      SrcTerminal   1
+      Points        [330, 340; 330, 370]
+      DstComponent  "Mux"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux"
+      SrcTerminal   1
+      DstComponent  "Scope1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From3"
+      SrcTerminal   1
+      Points        [330, 165; 330, 135]
+      DstComponent  "Mux1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From2"
+      SrcTerminal   1
+      Points        [330, 95; 330, 125]
+      DstComponent  "Mux1"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux1"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux2"
+      SrcTerminal   1
+      DstComponent  "Scope2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From6"
+      SrcTerminal   1
+      Points        [740, 95; 740, 125]
+      DstComponent  "Mux2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From5"
+      SrcTerminal   1
+      Points        [740, 165; 740, 135]
+      DstComponent  "Mux2"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux3"
+      SrcTerminal   1
+      DstComponent  "Scope3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From8"
+      SrcTerminal   1
+      Points        [745, 340; 745, 370]
+      DstComponent  "Mux3"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From7"
+      SrcTerminal   1
+      Points        [745, 410; 745, 380]
+      DstComponent  "Mux3"
+      DstTerminal   3
+    }
+  }
+}
+DemoSignature "CFSIhSlOBiQ7/gYM0R2iHzU1QPbMmYtRD3fxCKvTofY="
