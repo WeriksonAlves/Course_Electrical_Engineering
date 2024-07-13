@@ -1,0 +1,33 @@
+[System]
+Name='ELT451_P8_E1_R2'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=3
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='X'
+Range=[-5 5]
+NumMFs=3
+MF1='Negativo':'gaussmf',[2 -5]
+MF2='Ok':'gaussmf',[0.671069076770781 0]
+MF3='Positivo':'gaussmf',[3.38680174682753 5]
+
+[Output1]
+Name='Y'
+Range=[-7 7]
+NumMFs=3
+MF1='Abaixar':'gaussmf',[6 -7]
+MF2='Ok':'gaussmf',[1.11565234013142 0]
+MF3='Aumentar':'gaussmf',[6 7]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1

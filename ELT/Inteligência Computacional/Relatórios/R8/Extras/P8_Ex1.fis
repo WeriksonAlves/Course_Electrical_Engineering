@@ -1,0 +1,45 @@
+[System]
+Name='P8_Ex1'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=5
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='e_Grande'
+Range=[-1 1]
+NumMFs=3
+MF1='N_G':'gaussmf',[0.4 -1]
+MF2='Z_G':'gaussmf',[0.3 0]
+MF3='P_G':'gaussmf',[0.4 1]
+
+[Input2]
+Name='e_Pequeno'
+Range=[-2 2]
+NumMFs=3
+MF1='N_P':'gaussmf',[0.6664 -2]
+MF2='Z_P':'gaussmf',[0.5 0]
+MF3='P_P':'gaussmf',[0.6664 2]
+
+[Output1]
+Name='SC'
+Range=[-1 1]
+NumMFs=5
+MF1='N_G':'gaussmf',[0.02 -0.75]
+MF2='P_P':'gaussmf',[0.01 0.5]
+MF3='P_G':'gaussmf',[0.02 0.75]
+MF4='N_P':'gaussmf',[0.01 -0.5]
+MF5='Zero':'gaussmf',[0.02 0]
+
+[Rules]
+1 1, 1 (1) : 1
+2 1, 4 (1) : 1
+2 2, 5 (1) : 1
+2 3, 2 (1) : 1
+3 3, 3 (1) : 1

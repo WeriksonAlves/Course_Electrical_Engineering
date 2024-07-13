@@ -1,0 +1,30 @@
+[System]
+Name='exemplofismamdani'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='x'
+Range=[-1 1]
+NumMFs=2
+MF1='F1x':'trimf',[-1.8 -1 0.5]
+MF2='F2x':'trimf',[-0.5 1 1.8]
+
+[Output1]
+Name='y'
+Range=[-1 1]
+NumMFs=2
+MF1='F1y':'trimf',[-1.8 -1 0.5]
+MF2='F2y':'trimf',[-0.5 1 1.8]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
